@@ -1,0 +1,239 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D605C52-738E-4663-9D45-5EFB1C98AE76}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PisirWeb</RootNamespace>
+    <AssemblyName>PisirWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\bademliAyKurabiye.aspx" />
+    <Content Include="Assets\cinPilavi.aspx" />
+    <Content Include="Assets\CSS\MainLayout.css" />
+    <Content Include="Assets\EatImages\bademliAyKrabiye.png" />
+    <Content Include="Assets\EatImages\cin-pilavi-tarifi.jpg" />
+    <Content Include="Assets\EatImages\firinda-karnabahar-kizartmasi.png" />
+    <Content Include="Assets\EatImages\havuTopu.png" />
+    <Content Include="Assets\EatImages\pastirmali-humus.png" />
+    <Content Include="Assets\firindaKarnabaharKizartmasi.aspx" />
+    <Content Include="Assets\havucTopu.aspx" />
+    <Content Include="Assets\islakKek.aspx" />
+    <Content Include="Assets\kacKalori.aspx" />
+    <Content Include="Assets\listeler.aspx" />
+    <Content Include="Assets\menuler.aspx" />
+    <Content Include="Assets\PageImages\Blog.png" />
+    <Content Include="Assets\PageImages\Calorie.png" />
+    <Content Include="Assets\PageImages\Cutlery.png" />
+    <Content Include="Assets\PageImages\eatnumber.png" />
+    <Content Include="Assets\PageImages\Facebook.png" />
+    <Content Include="Assets\PageImages\Github.png" />
+    <Content Include="Assets\PageImages\islakKek.jpg" />
+    <Content Include="Assets\PageImages\Linkedin.png" />
+    <Content Include="Assets\PageImages\List.png" />
+    <Content Include="Assets\PageImages\MealPrep.png" />
+    <Content Include="Assets\PageImages\Menu.png" />
+    <Content Include="Assets\PageImages\PisirLogo.png" />
+    <Content Include="Assets\PageImages\Profile.png" />
+    <Content Include="Assets\PageImages\Search.png" />
+    <Content Include="Assets\PageImages\time.png" />
+    <Content Include="Assets\PageImages\Trend.png" />
+    <Content Include="Assets\PageImages\Twitter.png" />
+    <Content Include="Assets\PageImages\VideoLogo.png" />
+    <Content Include="Assets\PageImages\Whatsapp.png" />
+    <Content Include="Assets\PageImages\İnstagram.png" />
+    <Content Include="Assets\tarifler.aspx" />
+    <Content Include="Assets\videolar.aspx" />
+    <Content Include="Pisir.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\bademliAyKurabiye.aspx.cs">
+      <DependentUpon>bademliAyKurabiye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\bademliAyKurabiye.aspx.designer.cs">
+      <DependentUpon>bademliAyKurabiye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\cinPilavi.aspx.cs">
+      <DependentUpon>cinPilavi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\cinPilavi.aspx.designer.cs">
+      <DependentUpon>cinPilavi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\firindaKarnabaharKizartmasi.aspx.cs">
+      <DependentUpon>firindaKarnabaharKizartmasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\firindaKarnabaharKizartmasi.aspx.designer.cs">
+      <DependentUpon>firindaKarnabaharKizartmasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\havucTopu.aspx.cs">
+      <DependentUpon>havucTopu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\havucTopu.aspx.designer.cs">
+      <DependentUpon>havucTopu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\islakKek.aspx.cs">
+      <DependentUpon>islakKek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\islakKek.aspx.designer.cs">
+      <DependentUpon>islakKek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\kacKalori.aspx.cs">
+      <DependentUpon>kacKalori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\kacKalori.aspx.designer.cs">
+      <DependentUpon>kacKalori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\listeler.aspx.cs">
+      <DependentUpon>listeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\listeler.aspx.designer.cs">
+      <DependentUpon>listeler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\menuler.aspx.cs">
+      <DependentUpon>menuler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\menuler.aspx.designer.cs">
+      <DependentUpon>menuler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\tarifler.aspx.cs">
+      <DependentUpon>tarifler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\tarifler.aspx.designer.cs">
+      <DependentUpon>tarifler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\videolar.aspx.cs">
+      <DependentUpon>videolar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assets\videolar.aspx.designer.cs">
+      <DependentUpon>videolar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pisir.aspx.cs">
+      <DependentUpon>Pisir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pisir.aspx.designer.cs">
+      <DependentUpon>Pisir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\ProductImage\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65282</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
